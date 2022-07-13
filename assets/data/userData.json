@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Vanaja",
+    "username": "vanaja123",
+    "email":"vanaja@gmail.com",
+    "password":"vanaja123",
+    "address":"Sreevilla(H),Near St.John's Church, CUSAT - 682022",
+    "phoneNumber":"9400877711",
+    "wallet_amount": 100.0
+  },
+  {
+    "name": "Vandana",
+    "username": "vandu23",
+    "email":"vandu@gmail.com",
+    "password":"vandu23",
+    "address":"Sreevilla(H),Near St.John's Church, CUSAT - 682022",
+    "phoneNumber":"9400389875",
+    "wallet_amount": 500.0
+  }
+]
