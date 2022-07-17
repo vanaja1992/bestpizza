@@ -27,7 +27,7 @@ class AppColors{
   static const Color buttonColor = Colors.teal;
 
   //Bottom NavigationLabel Color
-  static const Color menuColor = Colors.black26;
+  static const Color menuColor = Colors.black12;
   static const Color bottomNavLabel = Color(0xFF546E7A);
 
   // ImageDecorationColor

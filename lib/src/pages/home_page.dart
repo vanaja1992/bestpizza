@@ -1,5 +1,6 @@
 import 'package:favorite_pizza/src/core/constants/app_colors.dart';
 import 'package:favorite_pizza/src/core/constants/app_strings.dart';
+import 'package:favorite_pizza/src/features/cart/widgets/cart_widget.dart';
 import 'package:favorite_pizza/src/features/orders/widgets/order_widget.dart';
 import 'package:favorite_pizza/src/features/profile/widgets/profile_widget.dart';
 import 'package:favorite_pizza/src/features/pizzas/widgets/pizza_list_widget.dart';
@@ -13,9 +14,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  static const fragments = [PizzaListWidget(), OrderWidget(), ProfileWidget()];
+  static const fragments = [PizzaListWidget(), OrderWidget(), CartWidget(), ProfileWidget()];
   int index = 0;
-  static const title = [AppStrings.home, AppStrings.orders, AppStrings.profile];
+  static const title = [AppStrings.home, AppStrings.orders,AppStrings.cart, AppStrings.profile];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,6 +40,10 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_bag),
               label: AppStrings.orders,
+              backgroundColor: AppColors.menuColor),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart),
+              label: AppStrings.cart,
               backgroundColor: AppColors.menuColor),
           BottomNavigationBarItem(
               icon: Icon(Icons.person),

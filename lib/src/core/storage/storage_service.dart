@@ -14,4 +14,8 @@ class StorageService {
     SharedPreferences preferences = await getInstance();
     return preferences.getString(key);
   }
+  static Future<void> clearAllData() async {
+    SharedPreferences preferences = await getInstance();
+     preferences.clear();
+  }
 }

@@ -16,6 +16,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  GlobalKey _formKey =GlobalKey();
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -24,9 +25,11 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: SafeArea(
         child: Form(
+          key: _formKey,
           child: Column(
             children: [
               TextFormField(
+                controller: usernameController,
                 decoration: InputDecorationThemes.formInputDecoration.copyWith(
                     labelText: AppStrings.username
                 ),
@@ -38,6 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                 height: 8,
               ),
               TextFormField(
+                controller: passwordController,
                 decoration: InputDecorationThemes.formInputDecoration.copyWith(
                     labelText: AppStrings.password_
                 ),

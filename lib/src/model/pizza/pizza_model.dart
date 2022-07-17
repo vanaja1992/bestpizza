@@ -1,8 +1,5 @@
 import 'dart:convert';
 
-PizzaModel pizzaModelFromJson(String str) =>
-    PizzaModel.fromJson(json.decode(str));
-String pizzaModelToJson(PizzaModel data) => json.encode(data.toJson());
 
 class PizzaModel {
   PizzaModel({

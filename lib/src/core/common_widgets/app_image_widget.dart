@@ -15,11 +15,11 @@ class AppImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CachedNetworkImage(
-      imageUrl: "http://via.placeholder.com/350x150",
-      height: height ?? 80.0,
+      imageUrl:imageUrl,
+      height: height ?? 150.0,
       width: width ?? MediaQuery.of(context).size.width - 32,
       placeholder: (context, url) => Lottie.asset(AppAssets.loadingAnimation,
-          width: 70, height: 70, fit: BoxFit.fill),
+          width: 100, height: 100, fit: BoxFit.fill),
       errorWidget: (context, url, error) => const Icon(Icons.error),
     );
 

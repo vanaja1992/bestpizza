@@ -9,7 +9,7 @@ class PizzaRepository{
   Future<List<PizzaModel>>fetchRestaurants() async {
     String pizzaDataJson = await FileHelper.readFile(AppAssets.pizzaDataJsonPath);
     List<dynamic> decodedPizzaList = jsonDecode(pizzaDataJson);
-    List<PizzaModel> pizzaModel = decodedPizzaList.map((pizzadata) => pizzaModelFromJson(pizzadata)).toList();
+    List<PizzaModel> pizzaModel = decodedPizzaList.map((pizzadata) => PizzaModel.fromJson(pizzadata)).toList();
     return pizzaModel;
 
   }

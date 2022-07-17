@@ -15,7 +15,7 @@ class AppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: onTap(), child: Text(title,
+    return ElevatedButton(onPressed: ()=>onTap(), child: Text(title,
     style: AppTextTheme.buttonTextStyle,)
     );
 

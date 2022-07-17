@@ -6,6 +6,7 @@ class AppStrings{
   ///4.Regex email
   ///4.Dashboard
   ///5.Pizza
+  ///6.Profile
 
 
   //1. Core
@@ -27,6 +28,7 @@ class AppStrings{
   //Global
   static const String home = "Home";
   static const String orders = "Orders";
+  static const String cart = "My Cart";
   static const String profile = "Profile";
 
   // Validation
@@ -49,4 +51,10 @@ class AppStrings{
   // Pizza Data Viewing
   static const String pizzaErrorViewMessage = "No Details available!!!";
 
+
+  //Profile
+  //Profile Repoitory
+   static const String profileErrorMessage = "Unable to fetch the profile detials";
+  // Profile Data Viewing
+  static const String profileErrorViewMessage = "No Details available!!!";
 }

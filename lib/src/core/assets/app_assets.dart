@@ -5,12 +5,11 @@ class AppAssets {
 
   //Data
   static const String userDataJsonPath = 'assets/data/userData.json';
-  static const String pizzaDataJsonPath = 'assets/data/pizzaData';
+  static const String pizzaDataJsonPath ='assets/data/pizzaData.json';
 
   //Images
   static const String splashImage = 'assets/images/bestpizza.jpg';
 
-
-  //3.Animations
-  static const String loadingAnimation = 'assets/animations/loading_1.json';
+ //3.Animations
+  static const String loadingAnimation = 'assets/animations/loading.json';
 }

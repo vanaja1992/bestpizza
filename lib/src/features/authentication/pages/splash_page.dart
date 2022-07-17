@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:favorite_pizza/src/core/assets/app_assets.dart';
 import 'package:favorite_pizza/src/core/constants/app_colors.dart';
 import 'package:favorite_pizza/src/core/storage/storage_service.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'login_page.dart';
@@ -17,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
   late bool newUser;
   @override
   void initState() {
-    // TODO: implement initState
+   checkAutoLogin();
     super.initState();
     startTimer();
   }
@@ -63,5 +65,11 @@ class _SplashPageState extends State<SplashPage> {
           context, MaterialPageRoute(builder: (context) => const LoginPage()));
     }
 
+  }
+
+  void checkAutoLogin() {
+    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+      // context.read<>A()
+    });
   }
 }

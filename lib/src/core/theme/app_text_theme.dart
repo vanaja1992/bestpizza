@@ -15,7 +15,9 @@ class AppTextTheme {
 //InputText Style
   static TextStyle inputTextStyle = GoogleFonts.poppins(
       fontSize: 20, fontWeight: FontWeight.w300, color: AppColors.headingColor);
-
+//InputText Style
+  static TextStyle inputTextStyle1 = GoogleFonts.poppins(
+      fontSize: 20, fontWeight: FontWeight.w300, color: AppColors.headingColor);
   // Button Style
   static TextStyle buttonTextStyle = GoogleFonts.poppins(
       fontSize: 18, fontWeight: FontWeight.w200, color: AppColors.backgroundColor);
